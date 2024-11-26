@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/DevNiklesh/go-gin-postgresql-api/pkg/books"
-	"github.com/DevNiklesh/go-gin-postgresql-api/pkg/common/db"
 	"github.com/gin-gonic/gin"
+	"github.com/manish8561/go-gin-postgresql-api/pkg/books"
+	"github.com/manish8561/go-gin-postgresql-api/pkg/common/db"
 	"github.com/spf13/viper"
 )
 

@@ -3,7 +3,6 @@ module github.com/manish8561/go-gin-postgresql-api
 go 1.22.2
 
 require (
-	github.com/DevNiklesh/go-gin-postgresql-api v0.0.0-20220530151138-8f4cad94b60b
 	github.com/gin-gonic/gin v1.10.0
 	github.com/spf13/viper v1.19.0
 	gorm.io/driver/postgres v1.5.10
