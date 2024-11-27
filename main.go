@@ -1,11 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"github.com/manish8561/go-gin-postgresql-api/painkiller"
 	"github.com/manish8561/go-gin-postgresql-api/pkg/books"
 	"github.com/manish8561/go-gin-postgresql-api/pkg/common/db"
 )
@@ -21,6 +23,10 @@ func init() {
 	gin.SetMode(ginMode)
 }
 func main() {
+	// stringer pkg example
+	fmt.Println(painkiller.Acetaminophen) // Output: Dog
+	fmt.Println(painkiller.Aspirin)       // Output: Cat
+	fmt.Println(painkiller.Ibuprofen)     // Output: Bird
 
 	err := godotenv.Load("./pkg/common/envs/.env")
 	if err != nil {
@@ -43,4 +49,5 @@ func main() {
 	})
 
 	router.Run(port)
+
 }
